@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -38,8 +41,8 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Your Body Is Designed <br>
-                        <span class="highlight">to Heal</span>
+                        Your <span class="highlight">Body</span> Is Designed <br>
+                        <span class="highlight-pink">to Heal</span>
                     </h1>
                     <div class="hero-badge">Rebalance in 90 Days</div>
                     <h2 class="hero-subtitle">A Full-Body Recalibration for Women</h2>
@@ -60,7 +63,7 @@
                     <a href="#assessment" class="cta-button-large">Book Your 15-Minute Assessment</a>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80" alt="Wellness and healing">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80" alt="Woman practicing yoga">
                     <div class="floating-stat">
                         <div class="stat-number">90</div>
                         <div class="stat-label">Days to Transform</div>
@@ -74,7 +77,7 @@
     <!-- Who This Is For Section -->
     <section class="who-section">
         <div class="container">
-            <h2 class="section-title">Created Exclusively for Women Experiencing:</h2>
+            <h2 class="section-title">Created <span class="highlight">Exclusively</span> for <span class="highlight-pink">Women</span> Experiencing:</h2>
             <div class="conditions-grid">
                 <div class="condition-card">
                     <div class="condition-icon">✓</div>
@@ -120,7 +123,7 @@
         <div class="container">
             <div class="reality-content">
                 <div class="reality-left">
-                    <h2 class="section-title">When Standard Treatment <span class="highlight-pink">Isn't Enough</span></h2>
+                    <h2 class="section-title">When <span class="highlight">Standard Treatment</span> <span class="highlight-pink">Isn't Enough</span></h2>
                     <div class="tried-list">
                         <p class="tried-item">You've tried the medications.</p>
                         <p class="tried-item">Followed the diet plans.</p>
@@ -151,15 +154,21 @@
                     </div>
                 </div>
             </div>
+            <div class="section-image reality-image">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80" alt="Woman reflecting on health journey">
+            </div>
         </div>
     </section>
 
     <!-- The Approach Section -->
     <section id="approach" class="approach-section">
         <div class="container">
-            <h2 class="section-title">Root-Cause Medicine, <br><span class="highlight-pink">Not Symptom Management</span></h2>
+            <h2 class="section-title"><span class="highlight">Root-Cause</span> Medicine, <br><span class="highlight-pink">Not Symptom Management</span></h2>
 
             <div class="approach-intro">
+                <div class="approach-image-container">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80" alt="Holistic health and wellness" class="approach-intro-image">
+                </div>
                 <div class="truth-box">
                     <p>Your <strong>reproductive system</strong> is designed to function optimally.</p>
                     <p>Your <strong>metabolism</strong> knows how to self-regulate.</p>
@@ -220,6 +229,11 @@
                 </div>
 
                 <p class="one-team"><strong>One team. One plan. One transformation.</strong></p>
+
+                <div class="program-image-container">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80" alt="Medical professionals collaborating" class="program-image">
+                </div>
+
                 <a href="#assessment" class="cta-button-large">Start Your Transformation</a>
             </div>
         </div>
@@ -228,7 +242,7 @@
     <!-- The Protocol Section (3 Phases - Animated) -->
     <section id="protocol" class="protocol-section">
         <div class="container">
-            <h2 class="section-title">3 Phases. 90 Days. <span class="highlight-pink">Lasting Change.</span></h2>
+            <h2 class="section-title"><span class="highlight">3 Phases.</span> <span class="highlight-pink">90 Days.</span> Lasting Change.</h2>
 
             <div class="timeline">
                 <div class="timeline-item phase-1" data-phase="1">
@@ -402,19 +416,6 @@
                         <li><strong>Ayurvedic formulations:</strong> Based on constitution</li>
                     </ul>
                 </div>
-
-                <div class="receive-card">
-                    <div class="card-icon">📱</div>
-                    <h3>Technology & Support</h3>
-                    <ul class="receive-list">
-                        <li><strong>Digital health dashboard:</strong> 90 days + extended</li>
-                        <li><strong>Centralized data tracking:</strong> Real-time</li>
-                        <li><strong>Progress visualization:</strong> All biomarkers</li>
-                        <li><strong>Direct team messaging:</strong> Unlimited</li>
-                        <li><strong>Educational resources:</strong> Complete library</li>
-                        <li><strong>Lifelong wellness blueprint:</strong> Personalized</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -422,7 +423,7 @@
     <!-- Clinical Outcomes / Testimonials -->
     <section class="outcomes-section">
         <div class="container">
-            <h2 class="section-title">What Actually Changes: <span class="highlight-pink">Clinical Outcomes</span></h2>
+            <h2 class="section-title">What <span class="highlight">Actually</span> Changes: <span class="highlight-pink">Clinical Outcomes</span></h2>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -535,7 +536,7 @@
     <!-- Questions Section -->
     <section class="questions-section">
         <div class="container">
-            <h2 class="section-title">Answering Your Questions</h2>
+            <h2 class="section-title">Answering Your <span class="highlight-pink">Questions</span></h2>
 
             <div class="qa-container">
                 <div class="qa-item">
@@ -663,7 +664,11 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq-section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title">Frequently Asked <span class="highlight-pink">Questions</span></h2>
+
+            <div class="faq-intro-image">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="Woman consulting with healthcare professional">
+            </div>
 
             <div class="faq-grid">
                 <div class="faq-item">
